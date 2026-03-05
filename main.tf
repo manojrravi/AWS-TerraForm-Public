@@ -1,10 +1,10 @@
 # VPC
 
-resource "aws_vpc" "vpc-1" {
+resource "aws_vpc" "ap-south-1-vpc-1" {
   cidr_block       = "10.10.0.0/16"
-  region = ap-south-1
+  region = "ap-south-1"
 
   tags = {
-    Name = "vpc-1"
+    Name = "ap-south-1-vpc-1"
   }
 }
