@@ -6,3 +6,10 @@
 crash.log
 *.tfvars
 *.tfvars.json
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
