@@ -9,3 +9,10 @@ resource "aws_vpc" "vpc-1" {
     managed = "terraform"
   }
 }
+
+
+# TGW 
+
+data "aws_ec2_transit_gateway" "manual-tgw" {
+  id = "tgw-0a69ae1498117108c"
+}
