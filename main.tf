@@ -6,5 +6,6 @@ resource "aws_vpc" "vpc-1" {
 
   tags = {
     Name = "vpc-1"
+    managed = "terraform"
   }
 }
