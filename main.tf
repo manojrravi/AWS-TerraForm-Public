@@ -44,3 +44,8 @@ data "aws_ec2_transit_gateway" "manual-tgw" {
 
 
 #TGW Attachment
+resource "aws_ec2_transit_gateway_vpc_attachment" "vpc-1-attachment" {
+  subnet_ids         = [aws_subnet.vpc-1-tgw-subnet-1.id, aws_subnet.vpc-1-tgw-subnet-2.id ]
+  transit_gateway_id = aws_ec2_transit_gateway.manual-tgw.id
+  vpc_id             = aws_vpc.vpc-1.id
+}
