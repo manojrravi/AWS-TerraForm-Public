@@ -38,7 +38,7 @@ resource "aws_subnet" "vpc_1_tgw_subnet_2" {
 # TGW 
 
 data "aws_ec2_transit_gateway" "manual_tgw" {
-  id = "tgw_0a69ae1498117108c"
+  id = "tgw-0a69ae1498117108c"
 }
 
 
