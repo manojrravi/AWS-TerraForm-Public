@@ -10,6 +10,17 @@ resource "aws_vpc" "vpc_1" {
   }
 }
 
+# Internet GW
+
+resource "aws_internet_gateway" "gw" {
+  vpc_id = aws_vpc.vpc_1.id
+
+  tags = {
+    Name = "vpc_1_IGW"
+    managed = "terraform"
+  }
+}
+
 
 # Subnets
 
