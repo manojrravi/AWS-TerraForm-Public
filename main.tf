@@ -70,17 +70,3 @@ resource "aws_subnet" "vpc_1_lb_subnet_2" {
     managed = "terraform"
   }
 }
-
-<<<<<<< HEAD
-resource "aws_subnet" "test" {
-  vpc_id     = aws_vpc.vpc_1.id
-  cidr_block = "10.10.12.0/24"
-  availability_zone = "ap-south-1b"
-
-  tags = {
-    Name = "test"
-    managed = "terraform"
-  }
-}
-=======
->>>>>>> parent of c2f94c8 (Added test subnet in main.tf)
