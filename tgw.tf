@@ -1,7 +1,7 @@
 # TGW 
 
 data "aws_ec2_transit_gateway" "manual_tgw" {
-  id = "tgw-0a69ae1498117108c"
+  id = "tgw-0632ed8fe1cbe11d6"
 }
 
 
