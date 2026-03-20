@@ -70,3 +70,15 @@ resource "aws_subnet" "vpc_1_lb_subnet_2" {
     managed = "terraform"
   }
 }
+
+
+resource "aws_subnet" "vpc_1_lb_subnet_3" {
+  vpc_id     = aws_vpc.vpc_1.id
+  cidr_block = "10.10.25.0/24"
+  availability_zone = "ap-south-1b"
+
+  tags = {
+    Name = "vpc_1_lb_subnet_3"
+    managed = "terraform"
+  }
+}
